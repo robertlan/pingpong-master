@@ -1,0 +1,13 @@
+# Logfile created on 2016-01-30 13:54:03 -0500 by logger.rb/47272
+D, [2016-01-30T13:54:16.738749 #57203] DEBUG -- : LE: Asynchronous socket writer started
+D, [2016-01-30T13:54:16.738815 #57203] DEBUG -- : LE: Reopening connection to Logentries API server
+D, [2016-01-30T13:54:17.987587 #57203] DEBUG -- : LE: Connection established
+D, [2016-01-30T13:54:57.229434 #57203] DEBUG -- : LE: commencing shutdown, queue has 0 entries to clear
+D, [2016-01-30T13:54:57.229557 #57203] DEBUG -- : LE: Closing Asyncrhonous socket writer
+D, [2016-01-30T13:54:57.430202 #57203] DEBUG -- : LE: shutdown complete, queue is empty with 0 entries
+D, [2016-01-30T13:55:35.074706 #57211] DEBUG -- : LE: Asynchronous socket writer started
+D, [2016-01-30T13:55:35.076591 #57211] DEBUG -- : LE: Reopening connection to Logentries API server
+D, [2016-01-30T13:55:35.684979 #57211] DEBUG -- : LE: Connection established
+D, [2016-01-30T13:55:54.305697 #57211] DEBUG -- : LE: commencing shutdown, queue has 0 entries to clear
+D, [2016-01-30T13:55:54.305846 #57211] DEBUG -- : LE: Closing Asyncrhonous socket writer
+D, [2016-01-30T13:55:54.510915 #57211] DEBUG -- : LE: shutdown complete, queue is empty with 0 entries

@@ -10,6 +10,7 @@ gem 'simple_form', '~> 3.0.2'
 gem 'devise',       '~> 3.5.2'
 gem 'devise-bootstrap-views', '~> 0.0.6'
 gem 'mysql2', '0.3.20'
+gem 'le'
 
 group :development, :test do
   gem 'byebug'
