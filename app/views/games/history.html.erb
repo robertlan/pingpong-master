@@ -3,10 +3,10 @@
 <div class="alert alert-warning" role="alert">This is a sample page. Replace link in the header with your own.</div>
 
 <% @games_played.each do |gp| %>
-	<%= gp.date %>
-	<%= gp.winning_user %>
-	<%= gp.losing_user %>
-	<%= gp.winning_score %>
-	<%= gp.losing_score %>
+	<%= gp.date_played %>
+	<%= gp.winning_user.email %>
+	<%= gp.losing_user.email %>
+	<%= gp.winning_user_score %>
+	<%= gp.losing_user_score %>
 <% end %>
 <%= image_tag('history.png') %>

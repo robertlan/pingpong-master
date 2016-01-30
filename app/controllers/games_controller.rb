@@ -4,6 +4,7 @@ class GamesController < ApplicationController
   end
 
   def history
+  	@games_played = Game.games_played(current_user)
   end
 
   def new
@@ -16,6 +17,7 @@ class GamesController < ApplicationController
   		if params[:game][:your_score].to_i > params[:game][:opponent_score].to_i
   			winning_user = current_user
   			losing_user = User.find_by_email(params[:game][:opponent])
+  			User.calculate_leaderboard(winning_user, losing_user)
   			params[:game][:winning_user_id] = winning_user.id
   			params[:game][:losing_user_id] = losing_user.id
   			params[:game][:winning_user_score] = params[:game][:your_score].to_i
@@ -23,6 +25,7 @@ class GamesController < ApplicationController
   		else
   			winning_user = User.find_by_email(params[:game][:opponent])
   			losing_user = current_user
+  			User.calculate_leaderboard(winning_user, losing_user)
   			params[:game][:losing_user_id] = losing_user.id
   			params[:game][:winning_user_id] = winning_user.id
   			params[:game][:losing_user_score] = params[:game][:your_score].to_i
