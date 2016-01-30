@@ -2,10 +2,26 @@
 
 <div class="alert alert-warning" role="alert">This is a sample page.</div>
 
-<% @leaderboard_users.each do |lu| %>
-	<%= lu.email %>
-	<%= lu.games_played %>
-	<%= lu.leaderboard_score %>
-<% end %>
 
-<%= image_tag('leaderboard.png') %>
+<table class=" table table-striped sortable">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Player</th>
+      <th>Games Played</th>
+      <th>Leaderboard Score</th>
+    </tr>
+  </thead>
+
+ <tbody>
+ 	<% rank = 1 %>
+   <% @leaderboard_users.each do |lu| %>
+     <tr>
+     	<td><%= rank %></td> 
+      <td><%= lu.email %></td>
+      <td><%= lu.games_played %></td>
+      <td><%= lu.leaderboard_score %></td>
+    </tr>
+    <% rank += 1 %>
+   <% end %>
+ </tbody>

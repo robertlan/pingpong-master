@@ -2,11 +2,25 @@
 
 <div class="alert alert-warning" role="alert">This is a sample page. Replace link in the header with your own.</div>
 
-<% @games_played.each do |gp| %>
-	<%= gp.date_played %>
-	<%= gp.winning_user.email %>
-	<%= gp.losing_user.email %>
-	<%= gp.winning_user_score %>
-	<%= gp.losing_user_score %>
-<% end %>
-<%= image_tag('history.png') %>
+
+<table class=" table table-striped sortable">
+  <thead>
+    <tr>
+      <th>Date Played</th>
+      <th>Winning Player</th>
+      <th>Losing Player</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+
+ <tbody>
+   <% @games_played.each do |gp| %>
+     <tr>
+      <td><%= gp.date_played %></td>
+      <td><%= gp.winning_user.email %></td>
+      <td><%= gp.losing_user.email %></td>
+      <td><%= gp.winning_user_score %>-<%= gp.losing_user_score %></td>
+    </tr>
+   <% end %>
+ </tbody>
+
