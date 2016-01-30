@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root to: "home#index"
   get '/history', to: 'home#history'
   get '/log',     to: 'games#new'
+  resources :game
+  post 'games/create', to: 'games#create', as: "create_game"
 end

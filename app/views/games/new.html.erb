@@ -1,4 +1,21 @@
-<h1 class='page-header'>Log Game</h1>
+<h1 class='page-header'>Log Game for <%=current_user.email%></h1>
 
 <div class="alert alert-warning" role="alert">This is a sample page. Replace link in the header with your own.</div>
 
+
+<%= simple_form_for :game, url: 'games/create', remote: false, html: { id: 'game_form'} do |f| %>
+  <fieldset>
+  		<%= f.input :date_played, as: :date,  prompt: { day: "day", month: 'month', year: 'year'}, start_year: Date.today.year - 1, end_year: Date.today.year, required: true %>
+
+    	<%= f.input :opponent, as: :select, required: true, collection: @opponents %>
+    	<%= f.input :your_score, required: true %>
+    	<%= f.input :opponent_score, required: true %>
+
+      <%= f.button :submit, "Submit" %>
+
+      
+    </div>
+  </fieldset>
+<% end %>
+
+<%= image_tag('log_game.png') %>

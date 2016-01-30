@@ -11,3 +11,9 @@ D, [2016-01-30T13:55:35.684979 #57211] DEBUG -- : LE: Connection established
 D, [2016-01-30T13:55:54.305697 #57211] DEBUG -- : LE: commencing shutdown, queue has 0 entries to clear
 D, [2016-01-30T13:55:54.305846 #57211] DEBUG -- : LE: Closing Asyncrhonous socket writer
 D, [2016-01-30T13:55:54.510915 #57211] DEBUG -- : LE: shutdown complete, queue is empty with 0 entries
+D, [2016-01-30T14:05:28.249524 #57261] DEBUG -- : LE: Asynchronous socket writer started
+D, [2016-01-30T14:05:28.249557 #57261] DEBUG -- : LE: Reopening connection to Logentries API server
+D, [2016-01-30T14:05:28.837253 #57261] DEBUG -- : LE: Connection established
+D, [2016-01-30T14:21:44.023158 #57261] DEBUG -- : LE: commencing shutdown, queue has 0 entries to clear
+D, [2016-01-30T14:21:44.023476 #57261] DEBUG -- : LE: Closing Asyncrhonous socket writer
+D, [2016-01-30T14:21:44.224885 #57261] DEBUG -- : LE: shutdown complete, queue is empty with 0 entries
